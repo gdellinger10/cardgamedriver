@@ -47,7 +47,7 @@ public class CardGameDriver {
         //    System.out.println(lmpGame);
             gameDone = !lmpGame.turn();
         }
-  
+
         System.out.println("Final Lamarckian hands\n" + lmpGame);   
 
     }

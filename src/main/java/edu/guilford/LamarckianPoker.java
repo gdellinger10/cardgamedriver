@@ -59,6 +59,10 @@ public class LamarckianPoker {
         if (player1Hand.size() < 7 || player2Hand.size() < 7) {
             makePool();
             // System.out.println("Turn " + iTurn + "\n" + pool);
+            if (player1Hand.size() == 0 || player2Hand.size() == 0){
+                System.out.println("Game over, player is out of cards.");
+                return false;
+            }
             Card player1Card = player1Hand.getCard(rand.nextInt(player1Hand.size()));
             Card player2Card = player2Hand.getCard(rand.nextInt(player2Hand.size()));
             Hand firstHand, secondHand;
@@ -134,7 +138,6 @@ public class LamarckianPoker {
         } else {
             return false;
         }
-
     }
 
     @Override

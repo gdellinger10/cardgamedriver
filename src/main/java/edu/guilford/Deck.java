@@ -18,7 +18,7 @@ public class Deck {
     public void clear() {
         deck.clear();
     }
-
+    
     public void build() {
         for (Card.Suit suit : Card.Suit.values()) {
             for (Card.Rank rank : Card.Rank.values()) {
